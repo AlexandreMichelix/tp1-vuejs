@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-    {{  }}
     <h2 class="t1">Ma superbe TodoList</h2>
     <div class="content">
       <input
@@ -125,12 +124,6 @@ export default {
     submitTask() {
       if (!this.task.name || !this.task.hours || !this.task.assigned)
         return window.alert("Veuillez remplir tous les champs");
-      if (this.tasks.assigned) {
-        console.log('ok');
-      }
-      if (this.tasks.assigned) {
-        console.log('ah');
-      }
       if (this.editedTask === null) {
         this.task.id = uuidv4();
         console.log(this.task.id);
